@@ -1,0 +1,12 @@
+.todo_search {
+    padding: 12px;
+    height: 44px;
+    width: 80%;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    font-size: var(--sm);
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}

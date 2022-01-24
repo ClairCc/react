@@ -1,0 +1,9 @@
+.todo_title {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: bisque;
+    font-size: var(--md);
+    text-align: center;
+    margin: 20px 0;
+}

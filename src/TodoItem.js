@@ -1,11 +1,20 @@
 import React from 'react';
+import './TodoItem.css';
 
 function TodoItem(props) {
     return (
-        <li>
-            <span>C</span>
-            <p>{props.text}</p>
-            <span>x</span>
+        <li className={`todo_item ${props.complete && 'todo_item-complete'} `}>
+            <span
+                className={`todo_item-check ${
+                    props.complete && 'todo_item-chech-complete'
+                }`}
+            >
+                ✅
+            </span>
+            <p className={`${props.complete && 'todo_item-p-complete'}`}>
+                {props.text}
+            </p>
+            <span className={`todo_item-delete`}>❎</span>
         </li>
     );
 }

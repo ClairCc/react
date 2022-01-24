@@ -1,0 +1,44 @@
+.todo_item {
+    width: 320px;
+    background: var(--soft_pink);
+    color: var(--background);
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+}
+.todo_item {
+    font-size: var(--sm);
+}
+.todo_item p {
+    max-width: 200px;
+}
+.todo_item span {
+    position: absolute;
+    bottom: calc(50% - 12px);
+    cursor: pointer;
+    transform: rotate(0);
+    transition: transform 1s ease;
+}
+.todo_item span:hover {
+    transform: rotate(360deg);
+}
+.todo_item-delete {
+    right: 20px;
+}
+.todo_item-check {
+    left: 20px;
+}
+.todo_item-complete {
+    background: var(--soft_green);
+}
+.todo_item-chech-complete {
+    display: none;
+}
+.todo_item-p-complete {
+    text-decoration: line-through;
+    color: #6a6e71;
+}

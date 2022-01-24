@@ -1,0 +1,18 @@
+.todo_add {
+    width: 40px;
+    height: 40px;
+    font-size: var(--md);
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -80px;
+    right: 116px;
+
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+.todo_add:hover {
+    transform: rotate(224deg);
+}

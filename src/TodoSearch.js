@@ -1,10 +1,15 @@
 import React from 'react';
+import './TodoSearch.css';
 
 function TodoSearch(props) {
     return (
-        <div>
-            <input type="text" placeholder="Escribe el TODO que buscas" />
-        </div>
+        <React.Fragment>
+            <input
+                className="todo_search"
+                type="text"
+                placeholder="Escribe el TODO que buscas"
+            />
+        </React.Fragment>
     );
 }
 
