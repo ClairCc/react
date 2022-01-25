@@ -1,9 +1,7 @@
 import React from 'react';
 import './TodoSearch.css';
 
-function TodoSearch(props) {
-    const [search, setSearch] = React.useState('');
-
+function TodoSearch({ search, setSearch }) {
     const searchTodo = (e) => {
         console.log(e.target.value);
         setSearch(e.target.value);
@@ -19,7 +17,6 @@ function TodoSearch(props) {
                 value={search}
             />
         </React.Fragment>,
-        <p>{search}</p>,
     ];
 }
 
